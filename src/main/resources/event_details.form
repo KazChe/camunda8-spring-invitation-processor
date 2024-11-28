@@ -1,0 +1,45 @@
+{
+  "components": [
+    {
+      "text": "Event details to be sent to invitees",
+      "type": "text",
+      "layout": {
+        "row": "Row_1gvb048",
+        "columns": null
+      },
+      "id": "Field_0jgx6jk"
+    },
+    {
+      "label": "Text area",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_160b8gv",
+        "columns": null
+      },
+      "id": "Field_0t1n1q5",
+      "key": "event_details"
+    },
+    {
+      "label": "Send",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1vg1075",
+        "columns": null
+      },
+      "id": "Field_01blfv9",
+      "conditional": {
+        "hide": "=event_details = null"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "event_details",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.6.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.29.0"
+  },
+  "schemaVersion": 17
+}
